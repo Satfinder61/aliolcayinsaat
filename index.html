@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ali Olcay İnşaat, Ankara</title>
+<link rel="icon" href="img/favicon.png">
+<meta name="description" content="Ali Olcay İnşaat: Ankara'da konut ve kentsel dönüşüm projeleri.">
+<!-- paylaşım önizlemesi (WhatsApp, Instagram, Facebook, X). ponytail: alan adı www.aliolcayinsaat.com varsayıldı; site başka adreste yayınlanırsa üç satırdaki adres değişir -->
+<link rel="canonical" href="https://www.aliolcayinsaat.com/">
+<link rel="alternate" hreflang="tr" href="https://www.aliolcayinsaat.com/">
+<link rel="alternate" hreflang="en" href="https://www.aliolcayinsaat.com/en.html">
+<link rel="alternate" hreflang="x-default" href="https://www.aliolcayinsaat.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="tr_TR">
+<meta property="og:site_name" content="Ali Olcay İnşaat">
+<meta property="og:title" content="Ali Olcay İnşaat, Ankara">
+<meta property="og:description" content="Ankara'da konut ve kentsel dönüşüm projeleri. Yeni yapımızda daire ve dükkân satışları başladı.">
+<meta property="og:url" content="https://www.aliolcayinsaat.com/">
+<meta property="og:image" content="https://www.aliolcayinsaat.com/img/paylasim.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Ali Olcay İnşaat'ın tamamlanan yapısı ve logosu">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#f5f2ec">
+<link rel="preload" as="image" href="img/hero-poster.webp" fetchpriority="high">
+<style>
+@font-face { font-family: "Cormorant Garamond"; src: url("fonts/CormorantGaramond-500-latin.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Cormorant Garamond"; src: url("fonts/CormorantGaramond-500-latin-ext.woff2") format("woff2"); font-weight: 500; font-style: normal; font-display: swap; unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Cormorant Garamond"; src: url("fonts/CormorantGaramond-600-latin.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Cormorant Garamond"; src: url("fonts/CormorantGaramond-600-latin-ext.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Poppins"; src: url("fonts/Poppins-300-latin.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Poppins"; src: url("fonts/Poppins-300-latin-ext.woff2") format("woff2"); font-weight: 300; font-style: normal; font-display: swap; unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Hanken Grotesk"; src: url("fonts/HankenGrotesk-400-latin.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Hanken Grotesk"; src: url("fonts/HankenGrotesk-400-latin-ext.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Hanken Grotesk"; src: url("fonts/HankenGrotesk-600-latin.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Hanken Grotesk"; src: url("fonts/HankenGrotesk-600-latin-ext.woff2") format("woff2"); font-weight: 600; font-style: normal; font-display: swap; unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+:root { --ok-egri: cubic-bezier(.22,1,.36,1); --kose: 6px;
+  /* Sakin lüks: fildişi kâğıt, lacivert mürekkep, ince çizgiler, zarif serif başlık. Gece'de aynı düzen koyu lacivertte. */
+  --kagit: #f5f2ec; --kagit-2: #ece7de; --murekkep: #0c1626; --murekkep-2: #4b5567; --cizgi: rgba(12, 22, 38, .16);
+  --vurgu: #1f3f77; --dugme: #0c1626; --dugme-yazi: #f5f2ec; --golge: rgba(12, 22, 38, .28);
+  --font-baslik: "Cormorant Garamond", "Times New Roman", serif;
+  --font-etiket: "Poppins", "Segoe UI", system-ui, sans-serif;
+  --font-govde: "Hanken Grotesk", "Segoe UI", system-ui, sans-serif;
+  --egri: cubic-bezier(.16, 1, .3, 1);
+  --logo-o: #b8a88f;
+  /* Yerleşim: açılışta video; altında sabit duran beyaz maket, yazı maketin karşı yanında, kutusuz. */
+  color-scheme: light;
+}
+:root[data-tema="gece"] {
+  --kagit: #0a111d; --kagit-2: #101a2a; --murekkep: #f3efe8; --murekkep-2: #aab3c2; --cizgi: rgba(243, 239, 232, .18);
+  --vurgu: #a9c3f2; --dugme: #f3efe8; --dugme-yazi: #0a111d; --golge: rgba(0, 0, 0, .5);
+  --logo-o: #e6dccb;
+  color-scheme: dark;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; overflow-x: clip; }
+body { margin: 0; background: var(--kagit); color: var(--murekkep); font-family: var(--font-govde); font-size: 17px; line-height: 1.65; -webkit-font-smoothing: antialiased; transition: background-color .9s var(--egri), color .9s var(--egri); }
+body::after { content: ""; position: fixed; inset: 0; z-index: 40; pointer-events: none; opacity: .05; background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .5  0 0 0 0 .5  0 0 0 0 .5  0 0 0 .9 0'/></filter><rect width='180' height='180' filter='url(%23n)'/></svg>"); }
+img { max-width: 100%; height: auto; display: block; }
+[hidden] { display: none !important; }
+h1, h2, h3, p, dl, dd, ol, ul { margin: 0; padding: 0; }
+ol, ul { list-style: none; }
+a { color: inherit; }
+:focus-visible { outline: 1px solid var(--vurgu); outline-offset: 4px; }
+
+#sahne { position: fixed; inset: 0; width: 100%; height: 100%; display: block; z-index: 0; }
+.webgl-yok #sahne, .uzun-cerceve #sahne { display: none; }
+.katman { position: relative; z-index: 1; }
+
+/* yazı */
+.baslik { font-family: var(--font-baslik); font-weight: 500; letter-spacing: -.012em; text-wrap: balance; }
+h1.baslik { font-size: clamp(46px, 7.4vw, 116px); line-height: .96; }
+h2.baslik { font-size: clamp(36px, 4.6vw, 66px); line-height: 1.02; }
+.etiket { font-family: var(--font-etiket); font-size: 12px; line-height: 20px; font-weight: 300; letter-spacing: .34em; text-transform: uppercase; color: var(--murekkep-2); }
+.giris { font-size: clamp(18px, 1.5vw, 21px); line-height: 1.55; }
+.soluk { color: var(--murekkep-2); }
+p { max-width: 34em; }
+
+.ic { width: 100%; max-width: 1320px; margin: 0 auto; padding: 0 clamp(20px, 5vw, 72px); }
+.yigin { display: grid; gap: 28px; justify-items: start; }
+.atla { position: fixed; left: 16px; top: -80px; z-index: 50; padding: 10px 16px; background: var(--murekkep); color: var(--kagit); }
+.atla:focus { top: 16px; }
+
+/* düğme ve bağlantı */
+.dugme { display: inline-flex; align-items: center; gap: 14px; min-height: 54px; padding: 0 28px; border: 0; background: var(--dugme); color: var(--dugme-yazi); font: 600 12.5px/1 var(--font-govde); letter-spacing: .16em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: background-color .5s var(--egri), color .5s var(--egri), box-shadow .5s var(--egri), transform .3s var(--ok-egri); }
+/* üzerine gelince: dolgu soldan süpürür (yalnız transform), çıkarken sağa doğru çekilir; ok Phosphor arrow-right (light) */
+.dugme { position: relative; isolation: isolate; overflow: hidden; }
+.dugme::before { content: ""; position: absolute; inset: 0; z-index: -1; background: var(--vurgu); transform: scaleX(0); transform-origin: right center; transition: transform .55s var(--ok-egri); }
+.dugme:hover::before, .dugme:focus-visible::before { transform: scaleX(1); transform-origin: left center; }
+.dugme svg { flex: none; width: 18px; height: 18px; fill: currentColor; transition: transform .45s var(--ok-egri); }
+.dugme:hover svg, .dugme:focus-visible svg { transform: translateX(4px); }
+.dugme:hover, .dugme:focus-visible { color: var(--kagit); }
+.dugme:active { transform: scale(.98); transition-duration: .5s, .5s, .5s, .12s; }
+/* yazı değişimi: transitions.dev "text states swap" — eski yazı yukarı kayıp bulanıklaşarak çıkar, yenisi alttan girer */
+.dugme__yazi { display: inline-block; transition: transform .15s ease-in-out, filter .15s ease-in-out, opacity .15s ease-in-out; }
+.dugme__yazi.cik { transform: translateY(-4px); filter: blur(2px); opacity: 0; }
+.dugme__yazi.gir { transform: translateY(4px); filter: blur(2px); opacity: 0; transition: none; }
+@media (prefers-reduced-motion: reduce) { .dugme, .dugme::before, .dugme svg, .dugme__yazi { transition: none !important; } }
+.dugme--cizgi { background: transparent; color: var(--murekkep); box-shadow: inset 0 0 0 1px var(--cizgi); }
+.dugme--cizgi::before { background: var(--dugme); }
+.dugme--cizgi:hover, .dugme--cizgi:focus-visible { color: var(--dugme-yazi); box-shadow: inset 0 0 0 1px var(--dugme); }
+/* videonun üstünde vurgu beyazdır; birincil düğme fildişi zeminde lacivertle dolar */
+.acilis .dugme:not(.dugme--cizgi)::before { background: #1f3f77; }
+.acilis .dugme:not(.dugme--cizgi):hover, .acilis .dugme:not(.dugme--cizgi):focus-visible { color: #f5f2ec; }
+.sira { display: flex; flex-wrap: wrap; gap: 14px; }
+.bag { text-decoration: none; background: linear-gradient(currentColor, currentColor) 0 100% / 100% 1px no-repeat; padding-bottom: 3px; transition: background-size .5s var(--egri); }
+.bag:hover { background-size: 0 1px; background-position: 100% 100%; }
+
+/* üst */
+.ust { position: fixed; top: 0; left: 0; right: 0; z-index: 20; color: var(--murekkep); transition: background-color .5s var(--egri), color .5s var(--egri), box-shadow .5s var(--egri); }
+.ust.kaydi { background: color-mix(in srgb, var(--kagit) 88%, transparent); -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px); box-shadow: 0 1px 0 var(--cizgi); }
+.ust:not(.kaydi):not(.menu-acik) { --logo-o: #e6dccb; --murekkep: #f5f2ec; --murekkep-2: #dfe4ec; --cizgi: rgba(245, 242, 236, .4); --kagit: #0c1626; }
+.ust .ic { display: flex; align-items: center; gap: 28px; padding-top: 18px; padding-bottom: 18px; }
+.ust__logo { display: inline-flex; align-items: center; gap: 18px; text-decoration: none; }
+.logo { position: relative; display: block; flex: none; }
+.logo i { position: absolute; inset: 0; -webkit-mask: var(--m) center / contain no-repeat; mask: var(--m) center / contain no-repeat; background: var(--murekkep); transition: background-color .5s var(--egri); }
+.logo i + i { background: var(--logo-o); }
+.logo--mono { width: 65px; height: 40px; }
+.logo--mono i { --m: url("img/monogram-a.png"); } .logo--mono i + i { --m: url("img/monogram-o.png"); }
+.logo--tam { width: 132px; aspect-ratio: 838 / 700; }
+.logo--tam i { --m: url("img/logo-a.png"); } .logo--tam i + i { --m: url("img/logo-o.png"); }
+.ust__logo .etiket { color: var(--murekkep); letter-spacing: .3em; transition: color .5s var(--egri); }
+.ust nav { display: flex; align-items: center; gap: 34px; margin-left: auto; }
+.ust nav a, .alt nav a, .tema button { font: 600 12px/20px var(--font-govde); letter-spacing: .16em; text-transform: uppercase; text-decoration: none; }
+.ust nav a, .alt nav a { padding: 6px 0; background: linear-gradient(currentColor, currentColor) 0 100% / 0 1px no-repeat; transition: background-size .5s var(--egri); }
+.ust nav a:hover, .ust nav a:focus-visible, .alt nav a:hover { background-size: 100% 1px; }
+.tema { display: inline-flex; align-items: center; gap: 10px; color: var(--murekkep-2); }
+.tema button { padding: 6px 0; border: 0; background: none; color: inherit; cursor: pointer; transition: color .4s var(--egri); }
+.tema button[aria-pressed="true"] { color: var(--murekkep); box-shadow: 0 1px 0 currentColor; }
+.tema span { width: 1px; height: 12px; background: var(--cizgi); }
+
+/* açılış */
+.acilis { position: relative; min-height: min(100vh, 940px); display: flex; align-items: flex-end; padding: 160px 0 0; color: #f5f2ec; --murekkep: #f5f2ec; --murekkep-2: #dfe4ec; --cizgi: rgba(245, 242, 236, .32); --dugme: #f5f2ec; --dugme-yazi: #0c1626; --vurgu: #ffffff; --kagit: #0c1626; }
+.acilis__video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 47% 50%; transition: filter .9s var(--egri); }
+:root[data-tema="gece"] .acilis__video { filter: brightness(.6) saturate(.8); }
+.acilis::before { content: ""; position: absolute; inset: 0; z-index: 1; background: linear-gradient(0deg, rgba(8, 14, 26, .88) 0%, rgba(8, 14, 26, .5) 42%, rgba(8, 14, 26, .12) 75%, rgba(8, 14, 26, .3) 100%); pointer-events: none; }
+.acilis .ic { position: relative; z-index: 2; }
+.acilis__kutu { max-width: 900px; padding-bottom: clamp(40px, 7vh, 84px); }
+.acilis .giris { max-width: 30em; color: #e9edf3; }
+.acilis__alt { display: flex; flex-wrap: wrap; gap: 10px 48px; padding: 22px 0 26px; border-top: 1px solid var(--cizgi); }
+.acilis__alt .etiket { color: #dfe4ec; }
+.satir { display: block; overflow: hidden; padding: .16em 0 .12em; margin: -.16em 0 -.12em; }
+.satir > span { display: block; animation: yuksel 1.3s var(--egri) both; animation-delay: calc(var(--i) * 120ms + 250ms); }
+@keyframes yuksel { from { transform: translateY(108%); } to { transform: none; } }
+.belir { animation: belir 1.2s var(--egri) both; animation-delay: calc(var(--i, 0) * 120ms + 650ms); }
+@keyframes belir { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+/* bölümler */
+.bolum { position: relative; padding: clamp(96px, 14vh, 176px) 0; }
+.bolum--dolu { background: var(--kagit-2); transition: background-color .9s var(--egri); }
+.bolum--sahne { min-height: min(100vh, 940px); display: flex; align-items: center; }
+.yarim { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: 64px; align-items: center; }
+
+.degerler { display: grid; width: 100%; border-top: 1px solid var(--cizgi); margin-top: 8px; }
+.degerler div { display: grid; grid-template-columns: 9.5em minmax(0, 1fr); gap: 24px; padding: 18px 0; border-bottom: 1px solid var(--cizgi); }
+.degerler dt { font-family: var(--font-baslik); font-size: 24px; line-height: 1.2; font-weight: 500; }
+.degerler dd { color: var(--murekkep-2); font-size: 16px; }
+
+/* yeni proje */
+.proje { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: clamp(40px, 6vw, 96px); align-items: center; }
+.proje--ters { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); }
+#islerimiz, #yeni-proje, #iletisim, #cizim, #instagram, #once-sonra { border-top: 1px solid var(--cizgi); }
+/* çizimden yapıya: mavi pafta, kendini aşağıdan yukarı çizen cephe, ardından gerçek fotoğraf. Yalnızca transform/opacity değişir. */
+.pafta { position: relative; aspect-ratio: 1600 / 1129; width: 100%; overflow: hidden; background: #1b365f; color: #eef3fb; }
+.pafta::before { content: ""; position: absolute; inset: 0; background-image: linear-gradient(rgba(238,243,251,.13) 1px, transparent 1px), linear-gradient(90deg, rgba(238,243,251,.13) 1px, transparent 1px), linear-gradient(rgba(238,243,251,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(238,243,251,.05) 1px, transparent 1px); background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px; }
+.pafta > * { position: absolute; }
+.pafta__foto { inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; }
+.pafta__perde { inset: 0; overflow: hidden; }
+.pafta__cizim { inset: 0; position: absolute; background: currentColor; -webkit-mask: url("img/cizim.png") 0 0 / 100% 100% no-repeat; mask: url("img/cizim.png") 0 0 / 100% 100% no-repeat; }
+.pafta__tarama { left: 0; right: 0; top: 0; height: 1px; background: #a9d4ff; box-shadow: 0 0 14px 2px rgba(169,212,255,.7); opacity: 0; }
+.pafta__kunye { right: 14px; bottom: 14px; display: grid; min-width: 168px; border: 1px solid rgba(238,243,251,.55); background: rgba(27,54,95,.82); font: 300 9.5px/1.4 var(--font-etiket); letter-spacing: .2em; text-transform: uppercase; }
+.pafta__kunye span { padding: 5px 10px; } .pafta__kunye span + span { border-top: 1px solid rgba(238,243,251,.35); }
+.pafta__kunye b { font-weight: 300; opacity: .65; margin-right: 8px; }
+@media (max-width: 560px) { .pafta__kunye { right: 8px; bottom: 8px; min-width: 0; font-size: 7.5px; } .pafta__kunye span { padding: 3px 7px; } }
+
+.kunye--kucuk dd { font-size: 21px; }
+.sorular { display: grid; width: 100%; border-top: 1px solid var(--cizgi); }
+.sorular details { border-bottom: 1px solid var(--cizgi); }
+.sorular summary { display: flex; justify-content: space-between; gap: 24px; padding: 20px 0; font-family: var(--font-baslik); font-size: 24px; line-height: 1.2; font-weight: 500; cursor: pointer; list-style: none; }
+.sorular summary::-webkit-details-marker { display: none; }
+.sorular summary::after { content: "+"; font-family: var(--font-govde); font-weight: 300; transition: transform .5s var(--egri); }
+.sorular details[open] summary::after { transform: rotate(45deg); }
+.sorular p { max-width: 34em; color: var(--murekkep-2); font-size: 16px; }
+.sorular p::after { content: ""; display: block; height: 22px; }
+.sorular summary:hover::after { color: var(--vurgu); }
+/* açılıp kapanma: içerik yüksekliği 0fr→1fr kayar, cevap hafifçe aşağıdan belirir. Desteklemeyen tarayıcıda anında açılır. */
+@media (prefers-reduced-motion: no-preference) {
+  .sorular details::details-content { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .6s var(--egri), content-visibility .6s allow-discrete; }
+  .sorular details[open]::details-content { grid-template-rows: 1fr; }
+  .sorular p { min-height: 0; overflow: hidden; opacity: 0; transform: translateY(-8px); transition: opacity .45s ease, transform .6s var(--egri); }
+  .sorular details[open] p { opacity: 1; transform: none; transition-delay: .08s; }
+}
+#sorular .iletisim { align-items: start; }
+#sorular .yigin { position: sticky; top: 120px; }
+.galeri { display: grid; gap: 20px; }
+.galeri__sahne { position: relative; aspect-ratio: 1600 / 1129; width: 100%; overflow: hidden; }
+.galeri__sahne img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+/* süpürme: clip-path yerine eğik perde + ters eğik görsel; yalnızca transform ve opacity değişir, GPU'da 60 fps.
+   27° = hat-acisi'nin (63°) dikeyle yaptığı açı; perde 1600/1129 oranında tam %36 eğiklik verir. */
+.galeri__alt { will-change: opacity; }
+.galeri__perde { position: absolute; top: 0; bottom: 0; left: -36%; width: 136%; overflow: hidden; transform-origin: 0 0; transform: skewX(27deg); }
+.galeri__sahne .galeri__perde img { left: 26.4706%; width: 73.5294%; transform-origin: 0 0; transform: skewX(-27deg); }
+.galeri__perde.basla { transform: translateX(-100%) skewX(27deg); }
+.galeri__perde.basla img { transform: translateX(136%) skewX(-27deg); }
+.galeri__perde.gec, .galeri__perde.gec img { transition: transform 1.2s var(--egri); }
+.galeri__kucukler { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.galeri__kucuk { display: grid; gap: 10px; align-content: start; padding: 0; border: 0; background: none; color: var(--murekkep-2); font: 600 11px/18px var(--font-govde); letter-spacing: .14em; text-transform: uppercase; text-align: left; cursor: pointer; transition: color .4s var(--egri); }
+.galeri__kucuk img { width: 100%; aspect-ratio: 16 / 10; object-fit: cover; opacity: .5; filter: saturate(.4); transition: opacity .6s var(--egri), filter .6s var(--egri); }
+.galeri__kucuk:hover img, .galeri__kucuk[aria-pressed="true"] img { opacity: 1; filter: none; }
+.galeri__kucuk[aria-pressed="true"] { color: var(--murekkep); }
+.galeri__kucuk span { justify-self: start; padding-bottom: 5px; box-shadow: 0 1px 0 transparent; transition: box-shadow .4s var(--egri); }
+.galeri__kucuk[aria-pressed="true"] span { box-shadow: 0 1px 0 currentColor; }
+
+/* süreç */
+.adimlar { display: grid; width: 100%; border-top: 1px solid var(--cizgi); counter-reset: adim; }
+.adim { display: grid; grid-template-columns: 64px minmax(0, 1fr); gap: 4px 20px; padding: 22px 0; border-bottom: 1px solid var(--cizgi); color: var(--murekkep-2); transition: color .7s var(--egri); counter-increment: adim; }
+.adim::before { content: "0" counter(adim); grid-row: span 2; font-family: var(--font-baslik); font-size: 34px; line-height: 1; font-weight: 500; font-variant-numeric: lining-nums; }
+.adim h3 { font-family: var(--font-baslik); font-size: 26px; line-height: 1.15; font-weight: 500; }
+.adim p { font-size: 16px; }
+.adim.etkin { color: var(--murekkep); box-shadow: inset 2px 0 0 0 transparent, 0 1px 0 var(--murekkep); }
+
+/* iletişim */
+.iletisim { display: grid; grid-template-columns: minmax(0, 6fr) minmax(0, 5fr); gap: 48px 64px; align-items: end; }
+.form { display: grid; gap: 22px; width: 100%; max-width: 34em; margin-top: 8px; }
+.form label { display: grid; gap: 6px; }
+.form input, .form textarea { width: 100%; padding: 8px 0 10px; border: 0; border-bottom: 1px solid var(--cizgi); border-radius: 0; background: none; color: var(--murekkep); font: 400 18px/1.5 var(--font-govde); resize: vertical; transition: border-color .4s var(--egri); }
+.form input:focus, .form textarea:focus { outline: none; border-bottom-color: var(--murekkep); }
+.form .dugme { justify-self: start; margin-top: 6px; }
+.form__not { margin: -8px 0 0; font-size: 13px; line-height: 1.5; }
+/* köşe: tek ölçü (--kose) her kutuda; çizgi, form alanı ve tam ekran menü köşesizdir */
+.dugme, .galeri__sahne, .galeri__kucuk img, .pafta { border-radius: var(--kose); }
+.pafta__kunye { border-radius: calc(var(--kose) - 2px); }
+/* instagram: resmi gömme kartları; keskin köşe, gölgesiz, ince çizgi. telefonda yana kaydırılır */
+.insta__bas { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 24px 40px; margin-bottom: 48px; }
+.insta__bas .baslik { font-size: clamp(36px, 4.4vw, 64px); line-height: 1.05; }
+.insta { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; align-items: start; }
+.insta .instagram-media { min-width: 0 !important; width: 100% !important; max-width: none !important; margin: 0 !important; border: 1px solid var(--cizgi) !important; border-radius: var(--kose) !important; overflow: hidden !important; box-shadow: none !important; }
+/* kartlar en uzun kartın boyunda; kısa kartın altı beyaz kalır (içerik Instagram'ın, uzatılamaz) */
+.insta iframe.instagram-media { min-height: var(--insta-h, 0) !important; background: #fff !important; }
+.insta blockquote.instagram-media { display: grid; place-items: center; min-height: 420px; padding: 24px; background: var(--kagit); }
+/* önce/sonra: iki portre fotoğraf yan yana, telefonda da yan yana kalır (karşılaştırma için) */
+.oncesonra { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(12px, 3vw, 40px); margin-top: clamp(32px, 5vw, 56px); }
+.oncesonra figure { margin: 0; display: grid; gap: 14px; }
+.oncesonra img { display: block; width: 100%; height: auto; border-radius: var(--kose); }
+@media (max-width: 560px) { .oncesonra figcaption { letter-spacing: .2em; font-size: 10.5px; } }
+/* dil düğmesi temanın yanında; telefonda tema sağa yaslanır, dil onun hemen yanında durur */
+.tema + .dil { margin-left: 0; }
+.dil a { padding: 6px 0; font: 600 12px/20px var(--font-govde); letter-spacing: .16em; text-decoration: none; color: inherit; transition: color .4s var(--egri); }
+.dil a:hover { color: var(--murekkep); }
+.dil a[aria-current="page"] { color: var(--murekkep); box-shadow: 0 1px 0 currentColor; }
+@media (max-width: 560px) { .ust .ic { gap: 18px; } .tema { gap: 8px; } .menu-dugme span { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; } .menu-dugme { min-width: 44px; justify-content: flex-end; } }
+/* sabit whatsapp çubuğu: yalnız telefonda; menü (z 20) üstünü örter */
+.wa-cubuk { display: none; }
+@media (max-width: 760px) {
+  .wa-cubuk { display: block; position: fixed; left: 0; right: 0; bottom: 0; z-index: 15; padding: 10px 20px calc(10px + env(safe-area-inset-bottom)); background: var(--kagit); box-shadow: 0 -1px 0 var(--cizgi); transform: translateY(100%); transition: transform .45s var(--ok-egri), background-color .9s var(--egri); }
+  .wa-cubuk.acik { transform: none; }
+  .wa-cubuk .dugme { width: 100%; justify-content: space-between; min-height: 48px; }
+}
+@media (max-width: 1100px) { .insta { grid-auto-flow: column; grid-template-columns: none; grid-auto-columns: min(340px, 82vw); overflow-x: auto; scroll-snap-type: x mandatory; padding-bottom: 12px; } .insta > * { scroll-snap-align: start; } }
+
+/* iletişim: sağdaki künye formla aynı satırdan başlar; her satırın alt çizgisi formdaki alanın alt çizgisine denk gelir */
+@media (min-width: 981px) {
+  #iletisim .iletisim { align-items: start; row-gap: 28px; }
+  #iletisim .yigin { display: contents; }
+  #iletisim .yigin > * { grid-column: 1; justify-self: start; }
+  #iletisim .yigin > .form { justify-self: stretch; }
+  #iletisim .kunye { grid-column: 2; grid-row: 4; margin-top: 8px; border-top: 0; gap: 22px; }
+  #iletisim .kunye div { min-height: 72px; padding: 0 0 10px; align-items: stretch; }
+  #iletisim .kunye dt { align-self: start; }
+  #iletisim .kunye dd { align-self: end; }
+}
+.kunye { display: grid; width: 100%; border-top: 1px solid var(--cizgi); }
+.kunye div { display: grid; grid-template-columns: 8.5em minmax(0, 1fr); gap: 20px; padding: 18px 0; border-bottom: 1px solid var(--cizgi); align-items: baseline; }
+.kunye dd { font-family: var(--font-baslik); font-size: 26px; line-height: 1.2; font-weight: 500; font-variant-numeric: lining-nums; overflow-wrap: anywhere; }
+.kunye a { text-decoration: none; }
+.kunye a:hover { color: var(--vurgu); }
+
+/* alt */
+.alt { position: relative; z-index: 2; background: var(--kagit); padding: 72px 0 40px; box-shadow: 0 -1px 0 var(--cizgi); transition: background-color .9s var(--egri); }
+.alt .ic { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 40px; }
+.alt nav { display: flex; flex-wrap: wrap; gap: 8px 34px; }
+.alt p { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; width: 100%; max-width: none; padding-top: 24px; border-top: 1px solid var(--cizgi); font-size: 13px; color: var(--murekkep-2); }
+
+/* kaydırınca giriş: yalnızca betik çalışıyorsa gizli başlar */
+.js [data-gir] { opacity: 0; transform: translateY(22px); }
+.js [data-gir].gir { opacity: 1; transform: none; transition: opacity 1.3s var(--egri), transform 1.3s var(--egri); transition-delay: calc(var(--i, 0) * 110ms); }
+
+/* telefon ve dar ekran menüsü: üst menü tam ekran listeye dönüşür */
+.menu-dugme { display: none; }
+@media (max-width: 1180px) {
+  .tema { margin-left: auto; }
+  .menu-dugme { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; padding: 0; border: 0; background: none; color: var(--murekkep); font: 600 12px/20px var(--font-govde); letter-spacing: .16em; text-transform: uppercase; cursor: pointer; }
+  .menu-dugme i { position: relative; width: 22px; height: 7px; }
+  .menu-dugme i::before, .menu-dugme i::after { content: ""; position: absolute; left: 0; right: 0; height: 1px; background: currentColor; transition: transform .5s var(--egri); }
+  .menu-dugme i::before { top: 0; } .menu-dugme i::after { bottom: 0; }
+  .menu-acik .menu-dugme i::before { transform: translateY(3px) rotate(27deg); }
+  .menu-acik .menu-dugme i::after { transform: translateY(-3px) rotate(-27deg); }
+  .ust.menu-acik { background: none; box-shadow: none; -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .ust nav { position: fixed; inset: 0; z-index: -1; flex-direction: column; align-items: stretch; justify-content: center; gap: 0; margin: 0; padding: 96px max(24px, 6vw) 48px; background: var(--kagit); visibility: hidden; opacity: 0; transition: opacity .45s var(--egri), visibility 0s .45s; }
+  .ust.menu-acik nav { visibility: visible; opacity: 1; transition: opacity .45s var(--egri); }
+  .ust nav a { padding: 14px 0; border-bottom: 1px solid var(--cizgi); background: none; font: 500 clamp(30px, 8vw, 44px)/1.15 var(--font-baslik); letter-spacing: 0; text-transform: none; opacity: 0; transform: translateY(16px); transition: opacity .6s var(--egri), transform .8s var(--egri), color .3s; }
+  .ust nav a:first-child { border-top: 1px solid var(--cizgi); }
+  .ust nav a:hover { color: var(--vurgu); }
+  .ust.menu-acik nav a { opacity: 1; transform: none; transition-delay: calc(var(--i) * 45ms + 80ms); }
+}
+@media (max-width: 980px) {
+  .yarim, .proje, .iletisim { grid-template-columns: minmax(0, 1fr); gap: 40px; }
+  .proje .galeri { order: 2; }
+  .proje--ters { grid-template-columns: minmax(0, 1fr); }
+  .bolum--sahne { min-height: 0; display: block; padding-top: 0; }
+  .bolum--sahne::before { content: ""; display: block; height: 52vh; }
+  .bolum--sahne .ic > div { padding: 40px 0 0; background: linear-gradient(var(--kagit) 0 0); box-shadow: 0 0 0 100vmax var(--kagit); clip-path: inset(0 -100vmax -1px -100vmax); }
+  .galeri__kucukler { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .degerler div, .kunye div { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .acilis { min-height: min(100vh, 820px); }
+}
+@media (max-width: 560px) { .sira .dugme, .yigin > .dugme { width: 100%; justify-content: space-between; } .ust__logo .etiket { display: none; } }
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  .js [data-gir] { opacity: 1; transform: none; }
+}
+</style>
+</head>
+<body>
+<a class="atla" href="#icerik">İçeriğe geç</a>
+<canvas id="sahne" aria-hidden="true"></canvas>
+
+<header class="ust" id="ust">
+  <div class="ic">
+    <a class="ust__logo" href="#acilis" aria-label="Ali Olcay İnşaat, sayfa başı"><span class="logo logo--mono" aria-hidden="true"><i></i><i></i></span><span class="etiket" aria-hidden="true" lang="tr">Ali Olcay İnşaat</span></a>
+    <nav aria-label="Bölümler" id="ust-menu">
+      <a style="--i:0" href="#hakkimizda">Hakkımızda</a>
+      <a style="--i:1" href="#yeni-proje">Yeni proje</a>
+      <a style="--i:2" href="#islerimiz">Projelerimiz</a>
+      <a style="--i:3" href="#surec">Süreç</a>
+      <a style="--i:4" href="#sorular">Sorular</a>
+      <a style="--i:5" href="#iletisim">İletişim</a>
+    </nav>
+    <div class="tema" role="group" aria-label="Tema">
+      <button type="button" data-tema="gunduz" aria-pressed="true">Gündüz</button><span aria-hidden="true"></span><button type="button" data-tema="gece" aria-pressed="false">Gece</button>
+    </div>
+    <div class="tema dil">
+      <a href="./" hreflang="tr" lang="tr" aria-current="page">TR</a><span aria-hidden="true"></span><a href="en.html" hreflang="en" lang="en">EN</a>
+    </div>
+    <button class="menu-dugme" type="button" aria-expanded="false" aria-controls="ust-menu"><span>Menü</span><i aria-hidden="true"></i></button>
+  </div>
+</header>
+
+<main class="katman" id="icerik">
+
+<section class="acilis" id="acilis" aria-label="Açılış">
+  <video class="acilis__video" id="video" muted playsinline preload="none" poster="img/hero-poster.webp" aria-hidden="true" tabindex="-1"><source src="media/hero-720-av1.mp4" type="video/mp4; codecs=av01.0.05M.10" media="(max-width: 760px)"><source src="media/hero-720.mp4" type="video/mp4" media="(max-width: 760px)"><source src="media/hero-1080-av1.mp4" type="video/mp4; codecs=av01.0.09M.10"><source src="media/hero-1080.mp4" type="video/mp4"><!-- AV1 önce (aynı kalite, yarı boyut); AV1 çözemeyen tarayıcı H.264 dosyasına düşer --></video>
+  <div class="ic">
+    <div class="acilis__kutu yigin">
+      <p class="etiket belir" style="--i: 0; color: #dfe4ec" lang="tr">Ali Olcay İnşaat · Ankara</p>
+      <h1 class="baslik"><span class="satir"><span style="--i: 0">Hayal edin,</span></span><span class="satir"><span style="--i: 1">tasarlayalım.</span></span></h1>
+      <p class="giris belir" style="--i: 2">Ankara'da konut ve kentsel dönüşüm projeleri yapıyoruz.</p>
+      <div class="sira belir" style="--i: 3">
+        <a class="dugme" href="https://wa.link/i6fvfx" target="_blank" rel="noopener">WhatsApp'tan yazın<svg viewBox="0 0 256 256" aria-hidden="true"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></a>
+        <a class="dugme dugme--cizgi" href="#yeni-proje">Projeyi inceleyin<svg viewBox="0 0 256 256" aria-hidden="true"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></a>
+      </div>
+    </div>
+    <div class="acilis__alt belir" style="--i: 4">
+      <span class="etiket">Konut</span>
+      <span class="etiket">Kentsel dönüşüm</span>
+      <span class="etiket">Daire ve dükkân satışları başladı</span>
+    </div>
+  </div>
+</section>
+
+<section class="bolum bolum--sahne" id="hakkimizda" aria-labelledby="b-hakkimizda">
+  <div class="ic yarim">
+    <div class="yigin" data-gir>
+      <p class="etiket">Hakkımızda</p>
+      <h2 class="baslik" id="b-hakkimizda">Güvenle kurar, sağlam teslim ederiz.</h2>
+      <p class="giris">Ali Olcay İnşaat, Ankara'da konut ve kentsel dönüşüm projeleri yapan bir müteahhitlik firmasıdır.</p>
+      <p class="soluk">Söz verdiğimiz planı, söz verdiğimiz kalitede teslim etmeyi esas alırız. Her projede çağdaş bir tasarımı sağlam bir yapıyla bir araya getiririz. Bizim için iş bina yapmakla bitmez; o binada yaşayacak insanların geleceğini de düşünürüz.</p>
+      <dl class="degerler">
+        <div><dt>Güven</dt><dd>Müşteri memnuniyeti, verdiğimiz her kararın ölçüsüdür.</dd></div>
+        <div><dt>Tasarım</dt><dd>Çağdaş mimariyi günlük hayatla birlikte düşünürüz.</dd></div>
+        <div><dt>Dayanıklılık</dt><dd>Yapıyı uzun yıllar ayakta kalacak biçimde kurarız.</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="bolum bolum--dolu" id="hizmetler" aria-labelledby="b-hizmetler">
+  <div class="ic iletisim" data-gir>
+    <div class="yigin">
+      <p class="etiket">Hizmetler</p>
+      <h2 class="baslik" id="b-hizmetler">Ne yapıyoruz.</h2>
+      <p class="giris">Binanızın tespitinden anahtar teslimine kadar işin tamamını üstleniriz.</p>
+    </div>
+    <dl class="degerler">
+      <div><dt>Kentsel dönüşüm</dt><dd>Riskli yapı tespitinden kat malikleriyle anlaşmaya, yıkımdan teslime kadar süreci yürütürüz.</dd></div>
+      <div><dt>Konut yapımı</dt><dd>Çağdaş tasarımlı, sağlam konut ve dükkânlı yapılar inşa ederiz.</dd></div>
+      <div><dt>Proje ve ruhsat</dt><dd>Mimari ve statik projeyi hazırlatır, ruhsat işlerini takip ederiz.</dd></div>
+      <div><dt>Satış</dt><dd>Tamamladığımız yapılardaki daire ve dükkânları doğrudan satarız.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="bolum bolum--dolu" id="yeni-proje" aria-labelledby="b-proje">
+  <div class="ic proje" data-gir>
+    <div class="galeri">
+      <div class="galeri__sahne">
+        <img class="galeri__alt" src="img/proje-bitmis.jpg" width="1600" height="1129" alt="" loading="lazy">
+        <div class="galeri__perde"><img class="galeri__ust" src="img/proje-bitmis.jpg" width="1600" height="1129" alt="Tamamlanan yapının sokaktan fotoğrafı" loading="lazy"></div>
+      </div>
+      <div class="galeri__kucukler" role="group" aria-label="Proje görselleri">
+        <button class="galeri__kucuk" type="button" aria-pressed="true" data-src="img/proje-bitmis.jpg" data-alt="Tamamlanan yapının sokaktan fotoğrafı"><img src="img/kucuk/proje-bitmis.jpg" width="1600" height="1129" alt="" loading="lazy" decoding="async"><span>Bitmiş yapı</span></button>
+        <button class="galeri__kucuk" type="button" aria-pressed="false" data-src="img/proje-genel.jpg" data-alt="Yeni projenin tasarım görseli, genel görünüm"><img src="img/kucuk/proje-genel.jpg" width="1600" height="820" alt="" loading="lazy" decoding="async"><span>Genel</span></button>
+        <button class="galeri__kucuk" type="button" aria-pressed="false" data-src="img/proje-giris.jpg" data-alt="Yeni projenin tasarım görseli, giriş ve otopark"><img src="img/kucuk/proje-giris.jpg" width="1600" height="900" alt="" loading="lazy" decoding="async"><span>Giriş</span></button>
+        <button class="galeri__kucuk" type="button" aria-pressed="false" data-src="img/proje-cephe.jpg" data-alt="Yeni projenin tasarım görseli, cephe ayrıntısı"><img src="img/kucuk/proje-cephe.jpg" width="1600" height="900" alt="" loading="lazy" decoding="async"><span>Cephe</span></button>
+      </div>
+    </div>
+    <div class="yigin">
+      <p class="etiket">Yeni projemiz</p>
+      <h2 class="baslik" id="b-proje">Yeni yapımız tamamlandı.</h2>
+      <p class="giris">Daire ve dükkân satışları başladı.</p>
+      <p class="soluk">Ahşap kaplamalı cephe, cam korkuluklu balkonlar, zemin katta dükkânlar. Konum, daire tipleri ve teslim koşulları için bize yazın.</p>
+      <!-- ponytail: yalnızca bilinen bilgiler; adres, kat, daire sayısı, m² gelince buraya satır eklenir -->
+      <dl class="kunye kunye--kucuk">
+        <div><dt class="etiket">Şehir</dt><dd>Ankara</dd></div>
+        <div><dt class="etiket">Durum</dt><dd>Tamamlandı</dd></div>
+        <div><dt class="etiket">Satışta</dt><dd>Daireler ve zemin kat dükkânları</dd></div>
+      </dl>
+      <a class="dugme" href="https://wa.link/i6fvfx" target="_blank" rel="noopener">WhatsApp'tan yazın<svg viewBox="0 0 256 256" aria-hidden="true"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="bolum bolum--dolu" id="cizim" aria-labelledby="b-cizim">
+  <div class="ic proje proje--ters" data-gir>
+    <div class="yigin">
+      <p class="etiket">Çizimden yapıya</p>
+      <h2 class="baslik" id="b-cizim">Kâğıttaki çizgiden teslim edilen binaya.</h2>
+      <p class="giris">Her yapı bir çizimle başlar. Yeni yapımızın cephesi önce kâğıtta, sonra sokakta.</p>
+    </div>
+    <div class="pafta" id="pafta" aria-hidden="true">
+      <img class="pafta__foto" src="img/proje-bitmis.jpg" width="1600" height="1129" alt="" loading="lazy">
+      <div class="pafta__perde"><span class="pafta__cizim"></span></div>
+      <span class="pafta__tarama"></span>
+      <span class="pafta__kunye"><span lang="tr">Ali Olcay İnşaat</span><span><b>Pafta</b>Cephe</span><span><b>Yer</b>Ankara</span></span>
+    </div>
+  </div>
+</section>
+
+<section class="bolum bolum--dolu" id="once-sonra" aria-labelledby="b-once-sonra">
+  <div class="ic">
+    <div class="yigin" data-gir>
+      <h2 class="baslik" id="b-once-sonra">İskeleden teslime.</h2>
+      <p class="giris">Aynı bina, inşaat sırasında ve tamamlandığında.</p>
+    </div>
+    <div class="oncesonra">
+      <figure data-gir style="--i: 1"><img src="img/insaat-sirasinda.jpg" width="1080" height="1440" alt="Yapı inşaat sırasında, iskeleyle" loading="lazy"><figcaption class="etiket">İnşaat sırasında</figcaption></figure>
+      <figure data-gir style="--i: 3"><img src="img/teslimde.jpg" width="1080" height="1440" alt="Aynı yapı tamamlandığında" loading="lazy"><figcaption class="etiket">Tamamlandığında</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="bolum bolum--dolu" id="islerimiz" aria-labelledby="b-islerimiz">
+  <div class="ic proje" data-gir>
+    <div class="galeri">
+      <div class="galeri__sahne">
+        <img class="galeri__alt" src="img/is-kule.jpg" width="832" height="1058" alt="" loading="lazy">
+        <div class="galeri__perde"><img class="galeri__ust" src="img/is-kule.jpg" width="832" height="1058" alt="Tamamladığımız yüksek konut yapısı" loading="lazy"></div>
+      </div>
+      <div class="galeri__kucukler" role="group" aria-label="Tamamlanan işlerin görselleri">
+        <button class="galeri__kucuk" type="button" aria-pressed="true" data-src="img/is-kule.jpg" data-alt="Tamamladığımız yüksek konut yapısı"><img src="img/kucuk/is-kule.jpg" width="832" height="1058" alt="" loading="lazy" decoding="async"><span>Konut kulesi</span></button>
+        <button class="galeri__kucuk" type="button" aria-pressed="false" data-src="img/is-cephe.jpg" data-alt="Tamamlanan bir yapının cephesi"><img src="img/kucuk/is-cephe.jpg" width="1600" height="1565" alt="" loading="lazy" decoding="async"><span>Cephe</span></button>
+        <button class="galeri__kucuk" type="button" aria-pressed="false" data-src="img/is-hol.jpg" data-alt="Mermer zeminli giriş holü"><img src="img/kucuk/is-hol.jpg" width="1600" height="1200" alt="" loading="lazy" decoding="async"><span>Giriş holü</span></button>
+        <button class="galeri__kucuk" type="button" aria-pressed="false" data-src="img/is-salon.jpg" data-alt="Teslim edilen bir dairenin salonu"><img src="img/kucuk/is-salon.jpg" width="1600" height="1067" alt="" loading="lazy" decoding="async"><span>Salon</span></button>
+        <button class="galeri__kucuk" type="button" aria-pressed="false" data-src="img/is-mutfak-1.jpg" data-alt="Teslim edilen bir dairenin mutfağı"><img src="img/kucuk/is-mutfak-1.jpg" width="1600" height="800" alt="" loading="lazy" decoding="async"><span>Mutfak</span></button>
+        <button class="galeri__kucuk" type="button" aria-pressed="false" data-src="img/is-mutfak-2.jpg" data-alt="Teslim edilen başka bir dairenin mutfağı"><img src="img/kucuk/is-mutfak-2.jpg" width="1181" height="1600" alt="" loading="lazy" decoding="async"><span>Mutfak</span></button>
+        <button class="galeri__kucuk" type="button" aria-pressed="false" data-src="img/is-koridor.jpg" data-alt="Daire içinden koridor"><img src="img/kucuk/is-koridor.jpg" width="1600" height="1200" alt="" loading="lazy" decoding="async"><span>Koridor</span></button>
+      </div>
+    </div>
+    <div class="yigin">
+      <p class="etiket">Projelerimiz</p>
+      <h2 class="baslik" id="b-islerimiz">Tamamladığımız işler.</h2>
+      <p class="giris">Teslim ettiğimiz yapılardan, dışarıdan ve içeriden kareler.</p>
+    </div>
+  </div>
+</section>
+
+<section class="bolum bolum--sahne" id="surec" aria-labelledby="b-surec">
+  <div class="ic yarim">
+    <div class="yigin" data-gir>
+      <p class="etiket">Süreç</p>
+      <h2 class="baslik" id="b-surec">Kentsel dönüşüm, dört adımda.</h2>
+      <p class="soluk">Her binanın süreci farklıdır. Genel sıra aşağıdaki gibidir; sizin yapınız için yol haritasını birlikte çıkarırız.</p>
+      <ol class="adimlar" id="adimlar">
+        <li class="adim etkin"><h3>Tespit</h3><p>Yapının riskli olup olmadığı, yetkili bir kuruluşun raporuyla belirlenir.</p></li>
+        <li class="adim"><h3>Anlaşma</h3><p>Kat malikleriyle koşullar konuşulur, yeni yapının projesi netleştirilir.</p></li>
+        <li class="adim"><h3>Yapım</h3><p>Eski yapı yıkılır, ruhsatı alınan proje uygulanır.</p></li>
+        <li class="adim"><h3>Teslim</h3><p>Daireler, anlaşmada yazan koşullarla sahiplerine teslim edilir.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="bolum bolum--dolu" id="sorular" aria-labelledby="b-sorular">
+  <div class="ic iletisim" data-gir>
+    <div class="yigin">
+      <p class="etiket">Sık sorulanlar</p>
+      <h2 class="baslik" id="b-sorular">Merak edilenler.</h2>
+      <p class="giris">Kentsel dönüşüme karar vermeden önce en çok sorulanlar. Cevabını bulamadığınızı bize yazın.</p>
+    </div>
+    <div class="sorular">
+      <details><summary>Binamın riskli olup olmadığını nasıl öğrenirim?</summary><p>Bakanlığın lisans verdiği bir kuruluşa riskli yapı tespiti yaptırılır. Başvuruyu kat maliklerinden biri yapabilir; rapor çıktıktan sonra süreç resmî olarak başlar.</p></details>
+      <details><summary>Masrafı kim karşılar?</summary><p>Çoğu binada kat karşılığı anlaşma yapılır: malikler arsa paylarını verir, yapım bizden olur, yeni daireler anlaşmadaki orana göre paylaşılır. Oranlar her bina için ayrı konuşulur.</p></details>
+      <details><summary>Süreç ne kadar sürer?</summary><p>Binanın büyüklüğüne, maliklerin anlaşmasına ve ruhsat süresine göre değişir. Sizin binanızın takvimini ilk görüşmede birlikte çıkarırız.</p></details>
+      <details><summary>İnşaat sürerken nerede oturacağız?</summary><p>Riskli yapı kararı alınan binalarda maliklerin ve kiracıların devletin kira yardımına başvurma hakkı vardır. Bunun dışında bir destek olacaksa anlaşmaya yazılır.</p></details>
+      <details><summary>Hangi semtlerde çalışıyorsunuz?</summary><p>Ankara'da çalışıyoruz. Binanızın adresini yazın, yerinde bakalım.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="bolum bolum--dolu" id="instagram" aria-labelledby="b-instagram">
+  <div class="ic" data-gir>
+    <div class="insta__bas">
+      <h2 class="baslik" id="b-instagram">Instagram'da son paylaşımlar.</h2>
+      <a class="dugme dugme--cizgi" href="https://www.instagram.com/aliolcayinsaat/" target="_blank" rel="noopener">Instagram'da takip edin<svg viewBox="0 0 256 256" aria-hidden="true"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></a>
+    </div>
+    <!-- ponytail: Instagram'ın resmi gömmesi; gönderiler elle seçildi, yenileri için yalnız bağlantılar değişir -->
+    <div class="insta" id="insta">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DR5hvM4jRHc/?utm_source=ig_embed" data-instgrm-version="14"><a href="https://www.instagram.com/p/DR5hvM4jRHc/" target="_blank" rel="noopener">Bu gönderiyi Instagram'da görün</a></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DO1oRUKjaoZ/?utm_source=ig_embed" data-instgrm-version="14"><a href="https://www.instagram.com/p/DO1oRUKjaoZ/" target="_blank" rel="noopener">Bu gönderiyi Instagram'da görün</a></blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DG9iK80N3AC/?utm_source=ig_embed" data-instgrm-version="14"><a href="https://www.instagram.com/reel/DG9iK80N3AC/" target="_blank" rel="noopener">Bu gönderiyi Instagram'da görün</a></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="bolum bolum--dolu" id="iletisim" aria-labelledby="b-iletisim">
+  <div class="ic iletisim" data-gir>
+    <div class="yigin">
+      <p class="etiket">İletişim</p>
+      <h2 class="baslik" id="b-iletisim" style="font-size: clamp(44px, 6.4vw, 96px)">Bize yazın.</h2>
+      <p class="giris">Projenizi ya da binanızı anlatın, birlikte bakalım.</p>
+      <form class="form" id="form">
+        <label><span class="etiket">Ad soyad</span><input name="ad" autocomplete="name" required></label>
+        <label><span class="etiket">Telefon</span><input name="tel" type="tel" autocomplete="tel" inputmode="tel"></label>
+        <label><span class="etiket">Mesajınız</span><textarea name="mesaj" rows="3" required></textarea></label>
+        <button class="dugme" type="submit" aria-describedby="form-not"><span class="dugme__yazi">WhatsApp'tan gönderin</span><svg viewBox="0 0 256 256" aria-hidden="true"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></button>
+        <p class="form__not soluk" id="form-not">Bu form bilgilerinizi kaydetmez. Yazdıklarınız WhatsApp'ta hazır mesaj olarak açılır; siz göndermeden kimseye ulaşmaz.</p>
+      </form>
+    </div>
+    <dl class="kunye">
+      <div><dt class="etiket">Telefon</dt><dd><a href="tel:+905462915655">0546 291 56 55</a></dd></div>
+      <div><dt class="etiket">E-posta</dt><dd><a href="mailto:aliolcay5655@gmail.com">aliolcay5655@gmail.com</a></dd></div>
+      <div><dt class="etiket">Instagram</dt><dd><a href="https://www.instagram.com/aliolcayinsaat/" target="_blank" rel="noopener">@aliolcayinsaat</a></dd></div>
+    </dl>
+  </div>
+</section>
+
+</main>
+
+<footer class="alt">
+  <div class="ic">
+    <span class="logo logo--tam" role="img" aria-label="Ali Olcay İnşaat"><i></i><i></i></span>
+    <nav aria-label="Alt bölümler">
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#yeni-proje">Yeni proje</a>
+      <a href="#islerimiz">Projelerimiz</a>
+      <a href="#surec">Süreç</a>
+      <a href="#sorular">Sorular</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+    <p><span>© 2026 Ali Olcay İnşaat · Ankara</span><a class="bag" href="https://www.instagram.com/aliolcayinsaat/" target="_blank" rel="noopener">Instagram: @aliolcayinsaat</a></p>
+  </div>
+</footer>
+
+<!-- telefonda sabit çağrı: açılış geçilince belirir, başka WhatsApp çağrısı ya da alt bilgi görünürken gizlenir -->
+<div class="wa-cubuk" id="wa-cubuk" inert><a class="dugme" href="https://wa.link/i6fvfx" target="_blank" rel="noopener">WhatsApp'tan yazın<svg viewBox="0 0 256 256" aria-hidden="true"><path d="M220.24,132.24l-72,72a6,6,0,0,1-8.48-8.48L201.51,134H40a6,6,0,0,1,0-12H201.51L139.76,60.24a6,6,0,0,1,8.48-8.48l72,72A6,6,0,0,1,220.24,132.24Z"/></svg></a></div>
+
+<script>
+(function () {
+  /* kodun yazdığı metinler: en.html AO_EN sözlüğünü taşır (araclar/en_sayfa.py ekler), Türkçede metin olduğu gibi kalır */
+  function t(s) { return (window.AO_EN || {})[s] || s; }
+  var kok = document.documentElement, azalt = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  kok.classList.add('js');
+  if (window.innerHeight > 2000) kok.classList.add('uzun-cerceve');
+
+  /* sayfa içi bağlantılar */
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="#"]'); if (!a) return;
+    var el = document.getElementById(a.getAttribute('href').slice(1)); if (!el) return;
+    e.preventDefault();
+    el.scrollIntoView({ behavior: azalt ? 'auto' : 'smooth', block: 'start' });
+    if (!el.hasAttribute('tabindex')) el.setAttribute('tabindex', '-1');
+    el.focus({ preventScroll: true });
+  });
+
+  /* kaydırınca giriş */
+  var girenler = [].slice.call(document.querySelectorAll('[data-gir]'));
+  if ('IntersectionObserver' in window && !azalt) {
+    var gozcu = new IntersectionObserver(function (kayitlar) {
+      kayitlar.forEach(function (k) { if (k.isIntersecting) { k.target.classList.add('gir'); gozcu.unobserve(k.target); } });
+    }, { threshold: 0.1 });
+    girenler.forEach(function (el) { gozcu.observe(el); });
+    setTimeout(function () { girenler.forEach(function (el) { var r = el.getBoundingClientRect(); if (r.top < innerHeight) el.classList.add('gir'); }); }, 1200);
+  } else girenler.forEach(function (el) { el.classList.add('gir'); });
+
+  /* galeri: yeni görsel eğik süpürmeyle gelir */
+  (function () {
+    [].forEach.call(document.querySelectorAll('.galeri'), function (g) {
+    var ust = g.querySelector('.galeri__ust'), perde = g.querySelector('.galeri__perde'), alt = g.querySelector('.galeri__alt'), sira = 0;
+    var dugmeler = [].slice.call(g.querySelectorAll('.galeri__kucuk'));
+    /* köşe fotoğrafın görünen kenarına: sahneye sığan (kırpılmayan) görselde boşluğu dışarıda bırakıp yuvarlar */
+    function kes(img, w, h) { var o = w / h, S = 1600 / 1129, y = o > S ? (1 - S / o) * 50 : 0, x = o < S ? (1 - o / S) * 50 : 0; img.style.clipPath = 'inset(' + y.toFixed(3) + '% ' + x.toFixed(3) + '% round var(--kose))'; }
+    function ilk() { if (ust.naturalWidth) kes(ust, ust.naturalWidth, ust.naturalHeight); }
+    ust.complete ? ilk() : ust.addEventListener('load', ilk, { once: true });
+    dugmeler.forEach(function (d) {
+      d.addEventListener('click', function () {
+        if (d.getAttribute('aria-pressed') === 'true') return;
+        dugmeler.forEach(function (o) { o.setAttribute('aria-pressed', o === d ? 'true' : 'false'); });
+        /* görsel önce çözülür; animasyon ilk karede takılmaz */
+        var bu = ++sira, yeni = new Image(); yeni.src = d.getAttribute('data-src');
+        (yeni.decode ? yeni.decode() : Promise.resolve()).catch(function () {}).then(function () {
+          if (bu !== sira) return; /* hızlı tıklamada yalnızca son seçim oynar */
+          alt.src = ust.src; alt.style.transition = 'none'; alt.style.opacity = 1; perde.classList.remove('gec'); perde.classList.add('basla');
+          alt.style.clipPath = ust.style.clipPath;
+          ust.src = yeni.src; ust.alt = d.getAttribute('data-alt'); kes(ust, yeni.naturalWidth, yeni.naturalHeight);
+          void perde.offsetWidth; if (!azalt) { perde.classList.add('gec'); alt.style.transition = 'opacity 1s ease'; } perde.classList.remove('basla'); alt.style.opacity = 0;
+        });
+      });
+    });
+    });
+  })();
+
+  /* form: sunucu yok; mesajı WhatsApp'ta hazır açar */
+  document.getElementById('form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    var f = e.target, metin = t('Merhaba, ben ') + f.ad.value.trim() + (f.tel.value.trim() ? ' (' + f.tel.value.trim() + ')' : '') + '.\n' + f.mesaj.value.trim();
+    window.open('https://wa.me/905462915655?text=' + encodeURIComponent(metin), '_blank', 'noopener');
+    yaziDegis(f.querySelector('.dugme__yazi'), t('WhatsApp açılıyor'), 2400);
+  });
+  /* düğme yazısını çıkar, değiştir, alttan sok; süre sonunda eskisine döner */
+  function yaziDegis(el, yeni, kalis) {
+    if (!el || el.dataset.mesgul) return;
+    var eski = el.textContent, d = el.parentNode; el.dataset.mesgul = 1;
+    d.style.minWidth = d.offsetWidth + 'px'; /* yazı kısalınca düğme zıplamasın */
+    function koy(metin, sonra) {
+      if (azalt) { el.textContent = metin; return sonra && sonra(); }
+      el.classList.add('cik');
+      setTimeout(function () {
+        el.textContent = metin; el.classList.remove('cik'); el.classList.add('gir');
+        void el.offsetWidth; el.classList.remove('gir'); sonra && sonra();
+      }, 150);
+    }
+    koy(yeni, function () { setTimeout(function () { koy(eski); delete el.dataset.mesgul; d.style.minWidth = ''; }, kalis); });
+  }
+
+
+
+  /* sabit whatsapp çubuğu: açılış geçildiyse ve ekranda başka WhatsApp çağrısı, form düğmesi ya da alt bilgi yoksa görünür */
+  (function () {
+    var c = document.getElementById('wa-cubuk'); if (!c || !('IntersectionObserver' in window)) return;
+    var engel = [].slice.call(document.querySelectorAll('.acilis, .bolum .dugme[href*="wa.link"], .form .dugme, .alt')), gorunen = new Set();
+    var io = new IntersectionObserver(function (g) {
+      g.forEach(function (k) { k.isIntersecting ? gorunen.add(k.target) : gorunen.delete(k.target); });
+      var ac = gorunen.size === 0; c.classList.toggle('acik', ac); c.inert = !ac;
+    });
+    engel.forEach(function (el) { io.observe(el); });
+  })();
+  /* instagram: gömme betiği yalnız bölüme yaklaşınca yüklenir */
+  (function () {
+    var b = document.getElementById('insta'); if (!b || !('IntersectionObserver' in window)) return;
+    var io = new IntersectionObserver(function (g) {
+      if (!g[0].isIntersecting) return; io.disconnect();
+      var sc = document.createElement('script'); sc.async = true; sc.src = 'https://www.instagram.com/embed.js'; document.body.appendChild(sc);
+      /* Instagram her kartın boyunu kendisi verir; en uzununu ortak en az boy yapar */
+new MutationObserver(function () {
+        var en = 0; [].forEach.call(b.querySelectorAll('iframe'), function (f) { en = Math.max(en, +f.getAttribute('height') || 0); });
+        if (en) b.style.setProperty('--insta-h', en + 'px');
+      }).observe(b, { childList: true, subtree: true, attributes: true, attributeFilter: ['height'] });
+    }, { rootMargin: '600px 0px' });
+    io.observe(b);
+  })();
+  /* çizimden yapıya: kaydırdıkça cephe aşağıdan yukarı çizilir, sonra gerçek fotoğraf belirir */
+  (function () {
+    var pafta = document.getElementById('pafta'); if (!pafta) return;
+    var perde = pafta.querySelector('.pafta__perde'), cizim = pafta.querySelector('.pafta__cizim'), tarama = pafta.querySelector('.pafta__tarama'), foto = pafta.querySelector('.pafta__foto');
+    var simdi = azalt ? 1 : 0, hedef = simdi, donuyor = false;
+    function sinir(x) { return x < 0 ? 0 : x > 1 ? 1 : x; }
+    function yumusak(x) { return 1 - Math.pow(1 - x, 3); }
+    function ciz(p) {
+      var c = yumusak(sinir(p / .62)), f = sinir((p - .62) / .3), h = pafta.offsetHeight;
+      perde.style.transform = 'translate3d(0,' + ((1 - c) * 100) + '%,0)';
+      cizim.style.transform = 'translate3d(0,' + (-(1 - c) * 100) + '%,0)';
+      tarama.style.transform = 'translate3d(0,' + ((1 - c) * h) + 'px,0)';
+      tarama.style.opacity = c > .01 && c < .99 ? 1 : 0;
+      foto.style.opacity = f; cizim.style.opacity = 1 - f * .8;
+    }
+    function dongu() {
+      simdi += (hedef - simdi) * .12;
+      if (Math.abs(hedef - simdi) < .0008) simdi = hedef;
+      ciz(simdi);
+      if (simdi !== hedef) requestAnimationFrame(dongu); else donuyor = false;
+    }
+    function olcP() {
+      if (azalt) return;
+      var r = pafta.getBoundingClientRect(), y = innerHeight;
+      if (r.bottom < -200 || r.top > y + 200) return;
+      hedef = sinir((y * .95 - r.top) / (y * .7 + r.height * .9)); /* pafta ekrana girince başlar, ekranın üst yarısına gelince fotoğraf tamamdır */
+      if (!donuyor) { donuyor = true; requestAnimationFrame(dongu); }
+    }
+    ciz(simdi); window.addEventListener('scroll', olcP, { passive: true }); window.addEventListener('resize', olcP); olcP();
+  })();
+
+  /* telefon menüsü */
+  (function () {
+    var ustM = document.getElementById('ust'), dugme = ustM.querySelector('.menu-dugme'), yazi = dugme.querySelector('span');
+    function menu(ac) {
+      ustM.classList.toggle('menu-acik', ac); dugme.setAttribute('aria-expanded', ac ? 'true' : 'false');
+      yazi.textContent = t(ac ? 'Kapat' : 'Menü'); kok.style.overflow = ac ? 'hidden' : '';
+      if (ac) { var ilk = ustM.querySelector('nav a'); setTimeout(function () { ilk.focus({ preventScroll: true }); }, 50); }
+    }
+    dugme.addEventListener('click', function () { menu(!ustM.classList.contains('menu-acik')); });
+    [].forEach.call(ustM.querySelectorAll('nav a'), function (a) { a.addEventListener('click', function () { menu(false); }); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && ustM.classList.contains('menu-acik')) { menu(false); dugme.focus(); } });
+    window.matchMedia('(min-width: 1181px)').addEventListener('change', function (m) { if (m.matches) menu(false); });
+  })();
+
+  /* video */
+  var video = document.getElementById('video');
+  if (video) {
+    if (azalt) { while (video.firstChild) video.removeChild(video.firstChild); video.load(); } /* hareket azaltma: yalnızca bitmiş yapının karesi */
+    else {
+      var oynat = function () { var s = video.play(); if (s && s.catch) s.catch(function () {}); };
+      /* hız: video sayfa yüklendikten sonra iner; o ana dek poster görünür */
+      var izle = function () { if ('IntersectionObserver' in window) new IntersectionObserver(function (g) { if (g[0].isIntersecting) oynat(); else video.pause(); }, { threshold: 0.05 }).observe(video); else oynat(); };
+      document.readyState === 'complete' ? izle() : window.addEventListener('load', izle);
+    }
+  }
+
+  /* tema */
+  var tema = 'gunduz', sahne = null;
+  try { if (localStorage.getItem('ao-tema') === 'gece') tema = 'gece'; } catch (h) {}
+  var temaDugmeleri = [].slice.call(document.querySelectorAll('button[data-tema]'));
+  function temaKoy(t, sakla) {
+    tema = t === 'gece' ? 'gece' : 'gunduz';
+    if (tema === 'gece') kok.setAttribute('data-tema', 'gece'); else kok.removeAttribute('data-tema');
+    temaDugmeleri.forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-tema') === tema ? 'true' : 'false'); });
+    if (sahne) sahne.gunduz(tema === 'gunduz');
+    if (sakla) { try { localStorage.setItem('ao-tema', tema); } catch (h) {} }
+  }
+  temaDugmeleri.forEach(function (b) { b.addEventListener('click', function () { temaKoy(b.getAttribute('data-tema'), true); }); });
+  temaKoy(tema, false);
+
+  /* sahne: kaydırma maketi kat kat kurar */
+  var ust = document.getElementById('ust');
+  var bolumler = ['acilis', 'hakkimizda', 'yeni-proje', 'surec', 'iletisim'].map(function (k) { return document.getElementById(k); });
+  var adimlar = [].slice.call(document.querySelectorAll('#adimlar .adim')), surec = document.getElementById('surec');
+  var bekleyen = false, acildi = false;
+
+  function olc() {
+    bekleyen = false;
+    var y = window.scrollY || kok.scrollTop, yuks = window.innerHeight, p = Math.min(1, Math.max(0, y / Math.max(1, surec.offsetTop - yuks * .2)));
+    ust.classList.toggle('kaydi', y > bolumler[0].offsetHeight - 90);
+    var orta = y + yuks / 2, f = 0, i, a, b;
+    for (i = 0; i < bolumler.length - 1; i++) {
+      a = bolumler[i].offsetTop + bolumler[i].offsetHeight / 2; b = bolumler[i + 1].offsetTop + bolumler[i + 1].offsetHeight / 2;
+      if (orta >= b) f = i + 1; else if (orta > a) { f = i + (orta - a) / (b - a); break; } else break;
+    }
+    var r = surec.getBoundingClientRect(), s = Math.min(.999, Math.max(0, (yuks * .5 - r.top) / Math.max(1, r.height))), etkin = Math.floor(s * adimlar.length);
+    adimlar.forEach(function (el, n) { el.classList.toggle('etkin', n === etkin); });
+    if (sahne) { sahne.ilerleme(acildi ? .3 + .7 * p : 0); sahne.bolum(f); }
+  }
+  function iste() { if (!bekleyen) { bekleyen = true; requestAnimationFrame(olc); } }
+  window.addEventListener('scroll', iste, { passive: true });
+  window.addEventListener('resize', function () { if (sahne) sahne.boyutla(); iste(); });
+  window.addEventListener('pointermove', function (e) { if (sahne && e.pointerType !== 'touch') sahne.isaret(e.clientX / innerWidth * 2 - 1, 1 - e.clientY / innerHeight * 2, false); }, { passive: true });
+
+  function sahneYok() { kok.classList.add('webgl-yok'); }
+  function sahneKur() {
+    if (!window.AOSahne) { sahneYok(); olc(); return; }
+    sahne = window.AOSahne.kur(document.getElementById('sahne'), { azalt: azalt, zarif: true, gunduz: tema === 'gunduz', kayip: sahneYok });
+    if (!sahne) { sahneYok(); olc(); return; }
+    setTimeout(function () { acildi = true; olc(); }, azalt ? 0 : 250);
+    olc();
+  }
+  /* hız: 3B sahne kodu (554 KB) sayfa yüklendikten sonra iner */
+  function sahneYukle() { var sc = document.createElement('script'); sc.src = 'js/sahne.min.js'; sc.onload = sahneKur; sc.onerror = function () { sahneYok(); olc(); }; document.body.appendChild(sc); }
+  if (document.readyState === 'complete') sahneYukle(); else window.addEventListener('load', sahneYukle);
+  olc();
+})();
+</script>
+</body>
+</html>
